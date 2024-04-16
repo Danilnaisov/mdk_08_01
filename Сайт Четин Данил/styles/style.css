@@ -1,0 +1,307 @@
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/Oswald-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../fonts/Oswald-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+  display: swap;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f1f1f1;
+  margin: 0;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 1600px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: white;
+  padding: 20px 0px 20px 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 16px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: darkgray;
+}
+
+img {
+  width: 400px;
+}
+
+blockquote {
+  color: darkorange;
+  font-size: 20px;
+}
+
+input {
+  border: #2e3953 1px none;
+  border-radius: 10px;
+  height: 25px;
+  padding-left: 5px;
+}
+
+.pr4_img {
+  width: auto;
+}
+
+.nav__item a {
+  color: #2e3953;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px;
+}
+
+.nav__item ul li {
+  display: inline-block;
+}
+
+.nav__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad__section {
+  border: #2e3953 5px dashed;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.ad__section h2 {
+  margin: 0px;
+}
+
+.ad__image {
+  width: 100%;
+}
+
+.header__h1 {
+  margin: 0px 0px 20px 0px;
+}
+
+.profile__image {
+  width: 200px;
+  height: 200px;
+}
+
+.profile__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 2px solid black;
+  display: block;
+}
+
+.top a {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 10px;
+  background: rgba(92, 122, 92, 0.3);
+  padding: 10px;
+  color: black;
+}
+
+.news__page {
+  width: 80%;
+}
+
+.newss {
+  display: flex;
+}
+
+.news {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news__item {
+  margin-bottom: 15px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.news__header h3 {
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
+
+.news__header a {
+  color: black;
+}
+
+.news__content {
+  max-width: 600px;
+  border: 1px gray solid;
+  overflow-wrap: break-word;
+  padding-bottom: 15px;
+}
+
+.news__content img {
+  width: 100%;
+}
+
+.news__content p {
+  margin: 10px;
+  text-indent: 10px;
+}
+
+.news__block {
+  transition: transform 0.4s ease;
+}
+
+.news__item:hover .news__block {
+  transform: scale(1.1);
+}
+
+.submit__button {
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 140px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.submit__button:hover {
+  transform: scale(1.1);
+}
+
+.personal__about {
+  display: flex;
+  flex-direction: row;
+}
+
+.forgot__password a {
+  color: rgb(112, 112, 112);
+  font-size: 15px;
+}
+
+.register__button a {
+  color: rgb(139, 139, 139);
+}
+
+.register__button {
+  font-size: 20px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside__weater {
+  width: 20%;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.href__disabled {
+  text-decoration: line-through;
+  color: inherit;
+}
+
+@media (width <=1400px) {
+  .ad__section {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media (width <=900px) {
+  .aside__weater {
+    display: none;
+  }
+}
+
+@media (width <=700px) {
+  .new__img {
+    width: 250px;
+  }
+
+  img {
+    width: 125px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .nav__item {
+    flex-direction: column;
+  }
+
+  .nav__item ul li {
+    display: block;
+    padding: 7px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .nav__item a {
+    font-size: 17px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}

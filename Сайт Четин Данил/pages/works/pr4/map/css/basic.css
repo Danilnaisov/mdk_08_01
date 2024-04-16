@@ -1,0 +1,34 @@
+h1, h2 {font-size: 150%; text-transform: uppercase; margin: 0 0 1em 0;}
+h2 {margin: 1em 0 0;}
+
+p.right {text-align: right;}
+table {border-style: none; border-collapse: collapse; margin-right: 1em;}
+table a {display: block;}
+td {border-bottom: silver solid 1px; padding: 1em 0; vertical-align: top; margin: 0;}
+.navBar td {border-bottom: none;}
+td.bullNum {text-align: center; border-bottom: none; padding: 0 4px 0;}
+td.bullNum div {line-height: 1em; margin: -.25em 0;}
+td.bullNum .bull {color: #1a975b; font-size: 9em;}
+.red td {cursor: pointer;}
+.red td.mp3 {cursor: auto;}
+.red td.bullNum .bull {color: red; font-size: 1em; width: 4em; height: 4em;}
+td.bullNum .num {position: relative; font-size: 150%; color: white; font-weight: bold; top: -1.6em;}
+td.text {padding-right: 8px;}
+td.text .head {font-weight: bold;}
+td.text .addr {font-size: 80%;}
+td.foto img {cursor: pointer; margin-top: 3px; margin-right: 3px;}
+.red td.foto img {cursor: pointer; margin-top: 0; margin-right: 6px;}
+td.mp3 {white-space: nowrap;}
+td.mp3 div {font-size: 80%; margin-top: 3px; padding: 0 .5em; line-height: 1.5em;}
+td.dnld div {background: none;}
+tr.navBar span {margin: 0 .4em; cursor: pointer; text-decoration: underline;}
+tr .active {color: DarkTurquoise;}
+tr.navBar .showAll span {margin: 0;}
+td.bigFoto img {width: 220px; height: 292px; margin: 0 52px 0 4px;}
+table.appeal {margin-left: 72px;}
+table.appeal td {padding: 24px 0;}
+.gallery {margin-top: 1em; margin-right: 10px;}
+.gallery p {margin-bottom: .75em;}
+.gallery img {display: block; margin: 1em 0;}
+.gallery .mp3 {text-align: right}
+.gallery td {cursor: auto;}

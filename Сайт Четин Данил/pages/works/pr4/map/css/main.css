@@ -1,0 +1,73 @@
+* {font-family: tahoma, verdana, 'ms sans serif', arial, helvetica, sans-serif; font-size: 12px; margin: 0; padding: 0;}
+body {font-size: small; background: white url('shadow.gif') top left repeat-x;}
+
+html, body {height: 100%;}
+
+a {color: black;}
+a:hover {color: DarkTurquoise;}
+
+.header {clear: left; margin-top: 2em; font-size: 250%; font-weight: bold;}
+
+.bordered {clear: left; padding: 2em 0; background: white; margin: 2em 0;
+border-radius: 1em;
+-o-border-radius: 1em;
+-khtml-border-radius: 1em;
+
+-webkit-border-radius: 1em;
+
+border: 2px solid;
+
+-moz-box-shadow: 0 0 7px;
+-webkit-box-shadow: 0 0 7px;
+box-shadow: 0 0 7px;
+}
+
+.green {border-color: SeaGreen;}
+.red {border-color: red;}
+.silver {border-color: silver;}
+
+.transparent {background: url('white.png');}
+
+.clear {clear: left; font-size: 0px; overflow: hidden;}
+
+.container {min-height:100%;
+height: auto !important;
+height: 100%;
+background: url('two.png') bottom center repeat-x;
+
+}
+.wrapper {width: 960px; margin: 0 auto; padding-left: 160px;}
+.column {float: left;}
+.info {width:640px;}
+.news {width: 160px;}
+
+.logo {margin-top: 64px; border: 0; width: 632px; height: 62px;}
+
+ul.menu {list-style-type: none; margin: 3em 0;}
+.menu li {display: inline; float: left; margin-bottom: 1em;}
+.menu li a {text-decoration: none; color: black; display: block; width: 110px; padding: 1.5em 0; margin-right: 16px; border-top: solid 1px black; text-transform: uppercase; font-size: 140%;}
+.menu li a:hover, .menu li.select a {border-top-color: DarkTurquoise; color: DarkTurquoise; background: url('Glow.gif') top left repeat-x;}
+
+.footer {background: url('black.png'); color: white; margin-bottom: 1em;}
+.column {position: relative;}
+.footer .column div {margin: 1em 0; font-size: 80%; width: auto;}
+.column div.one {position: absolute; left: 0;}
+.column div.one h1 {margin-left: 1em;}
+.column div.two {margin-left: 270px; padding-right: 1em;}
+.bordered .one img {margin-left: 2em;}
+.red .one img {margin-top: 2em;}
+.two p {margin-bottom: 1em;}
+
+.silver .bod {font-weight: bold;}
+.silver .two {height: 160px; padding-top: 1em;}
+
+.silver div {}
+.silver hr {margin: 0 30px; color: silver; background-color: silver; height: 2px; border-width: 0px;}
+.ext {text-align: right; margin: 1em 1em 0;}
+
+.frame {position: absolute;}
+.frame a {position: relative; z-index: 100; left: 38px;}
+.map {position: relative;}
+.hide {display: none;}
+
+.news p {margin: 64px 0 0 64px;}
