@@ -1,0 +1,92 @@
+.line li {
+  display: inline-block;
+  background: pink;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.links a {
+  display: block;
+  background: blue;
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  padding: 5px;
+  width: 150px;
+}
+
+.blocks {
+  margin-top: 40px;
+}
+
+.blocks div {
+  display: inline;
+  background: red;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+.blocks .none {
+  display: none;
+}
+
+.links-markers {
+  margin-top: 40px;
+  background: black;
+  width: 150px;
+}
+
+.links-markers a {
+  display: list-item;
+  color: white;
+  padding: 5px;
+}
+
+.post1 {
+  background-color: #930303;
+  color: white;
+  height: 110px;
+}
+
+.post2 {
+  background-color: #930303;
+  color: white;
+  height: 110px;
+}
+
+.post1 .image {
+  background: url("media/weather-sun.jpg") center/cover;
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+  border: red 3px dotted;
+}
+
+.post2 .image {
+  background: url("media/weather-sun.jpg") center/cover;
+  width: 100px;
+  height: 100px;
+  float: right;
+  margin-left: 10px;
+  border: red 3px dotted;
+}
+
+.table {
+  width: 360px;
+  margin-top: 10px;
+}
+
+.date,
+.image,
+.temp {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  font-weight: 600;
+}
+
+.date {
+  background: rgb(6, 59, 231);
+  color: white;
+}
