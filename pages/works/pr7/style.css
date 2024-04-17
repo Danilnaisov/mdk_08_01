@@ -1,0 +1,48 @@
+.p1 {
+  text-align: center;
+}
+.p2 {
+  text-indent: 20px;
+}
+.p3 {
+  line-height: 30px;
+}
+.p4 {
+  word-spacing: 5px;
+}
+.p5 {
+  letter-spacing: 5px;
+}
+.p6 {
+  text-transform: uppercase;
+}
+.p7 {
+  direction: rtl;
+}
+.p8 {
+  text-decoration: line-through;
+}
+.p9 {
+  font-family: "Times New Roman", Georgia, Serif;
+}
+.p10 {
+  font-size: 10px;
+}
+.p11 {
+  font-size: 15px;
+}
+.p12 {
+  color: white;
+}
+.p13 {
+  color: blue;
+}
+.p14 {
+  color: red;
+}
+.p15 {
+  font-weight: bold;
+}
+.p16 {
+  font-variant: small-caps;
+}
