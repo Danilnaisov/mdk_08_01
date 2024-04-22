@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: darkcyan;
+    color: white;
+    width: 100%;
+}
+
+.list{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 100%;
+    justify-content: center;
+}
+
+.item{
+    background: white;
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item__name{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.additional{
+    background: rgb(219, 219, 219);
+    color: black;
+    border-top: 1px black solid;
+    height: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 15px 0px 15px;
+}
+
+.additional h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+input{
+    width: 30px;
+    text-align: center;
+    border-radius: 5px;
+    height: 20px;
+    border: none;
+}
+
+.total__price{
+    color: green;
+    font-size: 12px;
+}
+
+.input__field{
+    color: gray;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.additional__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.img__container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 200px;
+}
+
+button{
+    font-family: 'Segoe UI';
+    background: rgb(1, 133, 1);
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
+}
+
+button:hover{
+    transform: scale(105%);
+    background: rgb(0, 177, 0);
+}

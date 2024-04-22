@@ -1,0 +1,167 @@
+body {
+    font-family: Arial;
+}
+
+.ex1 {
+    color: blue;
+}
+
+.ex2 {
+    width: 140px;
+}
+
+.ex2 li {
+    margin: 5px;
+    list-style: none;
+    padding: 5px;
+    color: blue;
+    border: 1px blue solid;
+}
+
+.ex3 {
+    width: 140px;
+}
+
+.ex3 li {
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    color: white;
+    background: black;
+    border: 1px black solid;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.ex3 li:hover {
+    background: white;
+    color: black;
+    border: 1px black solid;
+}
+
+.ex4 {
+    width: 180px;
+}
+
+.ex4 li {
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    list-style: none;
+    color: white;
+    background: blue;
+    border: 1px blue solid;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.ex4 li:hover {
+    background: white;
+    color: blue;
+    border: 1px blue solid;
+}
+
+.ex4__img {
+    display: none;
+    margin: auto;
+    margin-right: 7px;
+    background: url("/image/blue.png") center/cover;
+    width: 16px;
+    height: 16px;
+}
+
+.ex4 li:hover div {
+    display: block;
+}
+
+.ex5 li {
+    display: inline-block;
+    border: 1px blue solid;
+    padding: 4px;
+    transition: color 0.2s ease-in-out;
+}
+
+.ex5 li:hover {
+    color: red;
+}
+
+.ex6 li {
+    display: inline-block;
+    border: 1px blue solid;
+    padding: 4px;
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.ex6 li:hover {
+    background: black;
+    color: white;
+    border: 1px black solid;
+}
+
+.ex7 {
+    border: 2px gray dotted;
+    border-left: 0;
+    border-right: 0;
+    width: 560px;
+    align-content: center;
+    padding: 0;
+    margin-left: 100px;
+}
+
+.ex7 li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    width: 85px;
+    color: gray;
+}
+
+.ex7 li:hover {
+    color: rgb(0, 183, 255);
+}
+
+.ex7 li:hover img {
+    background-color: rgb(0, 183, 255);
+}
+
+.ex8 {
+    background: darkorange;
+    width: 490px;
+    padding-left: 10px;
+}
+
+.ex8 li {
+    height: 25px;
+    color: white;
+    align-content: center;
+    display: inline-block;
+    padding: 4px;
+    transition: background 0.2s ease-in-out;
+}
+
+.ex8 li:hover {
+    background: red;
+}
+
+table {
+    text-align: center;
+}
+
+.today {
+    color: red;
+}
+
+td:hover {
+    text-decoration: underline;
+    cursor: default;
+}
+
+.weekend {
+    color: gray;
+}
+
+th {
+    font-weight: 600;
+}
+
+.line td {
+    border-top: 2px black solid;
+}
