@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+article {
+  width: 622px;
+  color: white;
+  padding: 72.31px 0 54.94px 67.3px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+article:nth-child(1) {
+  background: linear-gradient(
+      75.91deg,
+      rgba(50, 34, 67, 0.8) 15.12%,
+      rgba(50, 34, 67, 0) 95.53%
+    ),
+    url("img/terrasy_04.png");
+  background-size: cover;
+}
+article:nth-child(2) {
+  background: linear-gradient(
+      75.91deg,
+      rgba(50, 34, 67, 0.8) 15.12%,
+      rgba(50, 34, 67, 0) 95.53%
+    ),
+    url("img/rehau-geneo-hst-05_1555579416.png");
+  background-size: cover;
+}
+article:nth-child(3) {
+  background: linear-gradient(
+      75.91deg,
+      rgba(50, 34, 67, 0.8) 15.12%,
+      rgba(50, 34, 67, 0) 95.53%
+    ),
+    url("img/terrasy_04.png");
+  background-size: cover;
+}
+article:nth-child(4) {
+  background: linear-gradient(
+      75.91deg,
+      rgba(50, 34, 67, 0.8) 15.12%,
+      rgba(50, 34, 67, 0) 95.53%
+    ),
+    url("imgpr10/zadpr10_4.png");
+  background-size: cover;
+}
+article:nth-child(2n-1) {
+  margin-right: 30px;
+}
+article p {
+  width: 310px;
+  font-family: "Tahoma";
+  font-size: 16px;
+}
+@font-face {
+  font-family: RobotoRegular;
+  src: url("/font/Roboto/Roboto-Regular.ttf");
+}
+article h3,
+article button {
+  font-family: RobotoRegular;
+  text-transform: uppercase;
+}
+article h3 {
+  font-size: 36px;
+  line-height: 42px;
+}
+article .price {
+  font-family: RobotoRegular;
+  font-size: 24px;
+}
+.price span {
+  font-size: 48px;
+  color: violet;
+  font-weight: bold;
+}
+article button {
+  font-size: 18px;
+}
+h3,
+p {
+  margin: 0;
+}
+article p {
+  width: 310px;
+  font-family: "Tahoma";
+  font-size: 16px;
+  margin: 11px 0 30px 0;
+}
+article h3 {
+  font-size: 36px;
+  line-height: 42px;
+}
+.price span {
+  font-size: 48px;
+  color: violet;
+  font-weight: bold;
+}
+article button {
+  font-size: 18px;
+  background: violet;
+  border: 0;
+  padding: 19px 38px;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
