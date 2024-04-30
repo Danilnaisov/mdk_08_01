@@ -25,7 +25,8 @@ body {
 }
 
 main {
-  width: 100%;
+  padding: 10px;
+  width: 90%;
   max-width: 1600px;
 }
 
