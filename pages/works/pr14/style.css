@@ -1,0 +1,212 @@
+body{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+/* Задание 1 */
+.box{
+    background: #2db34a;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 95px;
+    line-height: 95px;
+    width: 95px;
+    text-align: center;
+    transition: background 0.2s linear;
+}
+
+.box:hover{
+background: #ff7b29;
+}
+/* Задание 2 */
+.boxx{
+    background: #2db34a;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 95px;
+    line-height: 95px;
+    width: 95px;
+    text-align: center;
+    transition: all 0.5s linear;
+}
+
+.boxx:hover{
+    background: #ff7b29;
+    border-radius: 95px;
+}
+
+/* Задание 3 */
+
+.ex3{
+    display: flex;
+    flex-direction: row;
+}
+
+figure{
+    margin: 0;
+}
+
+.original, .box{
+    border-radius: 6px;
+}
+
+.original{
+    background: #eaeaed;
+    border: 1px #cecfd5 dashed;
+    float: left;
+    margin: 12px 15px;
+}
+
+.box1{
+    background: #2db34a;
+    height: 95px;
+    line-height: 95px;
+    width: 95px;
+    text-align: center;
+}
+
+.spin{
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
+
+.spin:hover{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+.box-21{
+    transform: translateX(-10px);
+}
+
+.box-22{
+    transform: translateY(25%);
+}
+
+.box-23{
+    transform: translate(-10px, 25%);
+}
+
+/* Задание 4 */
+
+.card__container{
+    cursor: pointer;
+    height: 350px;
+    width: 350px;
+    perspective: 600;
+    position: relative;
+    margin: 20px;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 0.7s ease-in-out;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.card .side{
+    backface-visibility: hidden;
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card .back{
+    transform: rotateY(180deg);
+}
+
+img{
+    width: 100%;
+}
+
+/* Задание 5 */
+
+@keyframes slide {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    33%{
+        left: 244px;
+        top: 100px
+    }
+    66%{
+        left: 488px;
+        top: 0;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+.stage{
+    background: #eaeaed;
+    border-radius: 6px;
+    height: 200px;
+    position: relative;
+    min-width: 538px;
+}
+
+.stage:hover .ball{
+    animation: slide;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: .5s;
+}
+
+.ball{
+    background: #2db34a;
+    margin: 10px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+/* Вариант 25 */
+
+.card__container25{
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+    perspective: 600;
+    position: relative;
+    margin: 20px;
+}
+
+.card25{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 2.5s ease-in-out;
+}
+
+.card25:hover{
+    transform: rotateY(180deg);
+}
+
+.card25 .image{
+    border-radius: 6px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
