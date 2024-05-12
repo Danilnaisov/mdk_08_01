@@ -8,93 +8,113 @@
     <script src="../script/script.js"></script>
     <title>Четин: авторизация</title>
   </head>
-  <body class="login__page">
+  <body>
     <header>
-      <h1 class="header__h1">Персональный сайт Четина Данила</h1>
-      <nav class="nav__item">
-        <ul>
-          <li>
-            <a href="../index.html">🏡Главная</a>
-          </li>
-          <li>
-            <a href="news.html">📰Новости</a>
-          </li>
-          <li>
-            <a href="personal.html">🤵Личный кабинет</a>
-          </li>
-          <li><a href="works/work.html">💻Мои работы</a></li>
-          <li>
-            <a href="login.html">🔑Войти</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="login">
-      <form id="loginForm">
-        <h3>Вход в аккаунт</h3>
-        <label>Логин</label>
-        <p>
-          <input type="text" maxlength="10" required autofocus />
-        </p>
-        <label>Пароль</label>
-        <p>
-          <input type="password" maxlength="8" required />
-        </p>
-        <p class="forgot__password"><a href="">Забыли пароль?</a></p>
-        <div class="checkbox">
-          <input type="checkbox" id="consent" />
-          <label for="consent">Запомнить на этом устройстве</label>
+      <div class="header">
+        <div class="header__item">
+          <a href="../index.html">
+            <div class="header__bg"></div>
+            <div class="header__img">
+              <img class="img1" src="../img/Header/user.svg" alt="" />
+              <img class="img2" src="../img/Header/name.svg" alt="" />
+            </div>
+          </a>
         </div>
-        <button type="submit" class="submit__button">Войти</button>
-        <h3 class="register__button">
-          Нет аккаунта? <a id="registerButton">Зарегистрироваться</a>
-        </h3>
-      </form>
-      <form id="registerForm" style="display: none">
-        <h3>Регистрация</h3>
-        <label for="firstName">Имя</label>
-        <p>
-          <input type="text" required />
-        </p>
-        <label for="lastName">Фамилия</label>
-        <p>
-          <input type="text" required />
-        </p>
-        <label for="middleName">Отчество</label>
-        <p>
-          <input type="text" required />
-        </p>
-        <label for="username">Логин</label>
-        <p>
-          <input type="text" maxlength="10" required />
-        </p>
-        <label for="password">Пароль (максимум 8 символов)</label>
-        <p>
-          <input type="password" maxlength="8" required />
-        </p>
-        <label>Подтверждение пароля</label>
-        <p>
-          <input type="password" maxlength="8" required />
-        </p>
-        <label>Дата рождения</label>
-        <p>
-          <input type="date" required />
-        </p>
-        <p>
-          <input type="checkbox" id="consentt" required />
-          <label for="consentt">
-            Согласие на обработку персональных данных
-          </label>
-        </p>
-        <button type="submit" class="submit__button">Зарегистрироваться</button>
-        <h3 class="register__button">
-          Уже зарегистрированны? <a id="loginButton">Войти</a>
-        </h3>
-      </form>
+        <div class="nav__items">
+          <div class="nav__item">
+            <a href="../index.html">
+              <img src="../img/Header/home.svg" alt="" />
+              <h4>Главная</h4>
+            </a>
+          </div>
+          <div class="nav__item">
+            <a href="../pages/news.html">
+              <img src="../img/Header/news.svg" alt="" />
+              <h4>Новости</h4>
+            </a>
+          </div>
+          <div class="nav__item">
+            <a href="../pages/personal.html">
+              <img src="../img/Header/personal.svg" alt="" />
+              <h4>Личный кабинет</h4>
+            </a>
+          </div>
+          <div class="nav__item">
+            <a href="../pages/work.html">
+              <img src="../img/Header/works.svg" alt="" />
+              <h4>Мои работы</h4>
+            </a>
+          </div>
+          <div class="nav__item selected">
+            <a href="../pages/login.html">
+              <img src="../img/Header/login.svg" alt="" />
+              <h4>Войти</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page__name"><h1>Вход</h1></div>
+      <section class="page__section login__section">
+        <div class="section__header">
+          <div class="login__header">
+            <img src="../img/Login/Login.svg" alt="" />
+            <h2>Логин</h2>
+          </div>
+          <input type="text" maxlength="20" required class="login__input" />
+        </div>
+        <div class="section__header">
+          <div class="password_eye" onclick="togglePasswordVisibility()"></div>
+          <div class="login__header">
+            <img src="../img/Login/Password.svg" alt="" />
+            <h2>Пароль</h2>
+          </div>
+          <input
+            type="password"
+            maxlength="8"
+            required
+            class="login__input"
+            id="passwordInput"
+          />
+        </div>
+        <div class="section__header">
+          <input type="checkbox" id="input" class="checkbox" />
+          <label for="input">Запомнить меня</label>
+        </div>
+        <div class="section__header buttons">
+          <button type="submit" class="login__button" onclick="refreshPage()">
+            Войти
+          </button>
+          <button
+            type="submit"
+            class="register__button"
+            onclick="redirectToRegistration()"
+          >
+            Зарегистрироваться
+          </button>
+        </div>
+        <div class="section__block forgot__password">
+          <a href=""><p>Забыли пароль?</p></a>
+        </div>
+      </section>
+      <footer>
+        <div class="footer__links">
+          <a href="https://github.com/Danilnaisov" target="_blank">
+            <img src="../img/Git.svg" alt="" />
+          </a>
+          <a
+            href="https://www.figma.com/file/5viNWBjOQY8Kkx23qnVJZ5/Untitled"
+            target="_blank"
+          >
+            <img src="../img/Figma.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__text">
+          <p>Сайт разработан Четиным Данилом © 2024</p>
+          <p>Все права защищены</p>
+        </div>
+      </footer>
     </main>
-    <footer>
-      <p>Сайт разработан Четиным Данилом © Все права защищены</p>
-    </footer>
-    <script></script>
   </body>
 </html>

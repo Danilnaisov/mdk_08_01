@@ -1,17 +1,24 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var loginForm = document.querySelector("form");
-  var registerForm = document.getElementById("registerForm");
-  var registerButton = document.getElementById("registerButton");
-  var loginButton = document.getElementById("loginButton");
+function togglePasswordVisibility() {
+  var passwordInput = document.getElementById("passwordInput");
+  var passwordEye = document.querySelector(".password_eye");
 
-  registerButton.addEventListener("click", function (event) {
-    loginForm.style.display = "none";
-    registerForm.style.display = "block";
-    event.preventDefault();
-  });
-  loginButton.addEventListener("click", function (event) {
-    loginForm.style.display = "block";
-    registerForm.style.display = "none";
-    event.preventDefault();
-  });
-});
+  if (passwordInput.type === "password") {
+    passwordInput.type = "text";
+    passwordEye.classList.add("active");
+  } else {
+    passwordInput.type = "password";
+    passwordEye.classList.remove("active");
+  }
+}
+
+function refreshPage() {
+  location.reload();
+}
+
+function redirectToRegistration() {
+  window.location.href = "register.html";
+}
+
+function redirectToLogin() {
+  window.location.href = "login.html";
+}

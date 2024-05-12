@@ -10,33 +10,77 @@
   </head>
   <body>
     <header>
-      <h1 class="header__h1">Персональный сайт Четина Данила</h1>
-      <nav class="nav__item">
-        <ul>
-          <li>
-            <a href="../../../index.html">🏡Главная</a>
-          </li>
-          <li>
-            <a href="../../news.html">📰Новости</a>
-          </li>
-          <li>
-            <a href="../../personal.html">🤵Личный кабинет</a>
-          </li>
-          <a href="../work.html">💻Мои работы</a>
-          <li>
-            <a href="../../login.html">🔑Войти</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header">
+        <div class="header__item">
+          <a href="../../../index.html">
+            <div class="header__bg"></div>
+            <div class="header__img">
+              <img class="img1" src="../../../img/Header/user.svg" alt="" />
+              <img class="img2" src="../../../img/Header/name.svg" alt="" />
+            </div>
+          </a>
+        </div>
+        <div class="nav__items">
+          <div class="nav__item">
+            <a href="../../../index.html">
+              <img src="../../../img/Header/home.svg" alt="" />
+              <h4>Главная</h4>
+            </a>
+          </div>
+          <div class="nav__item">
+            <a href="../../../pages/news.html">
+              <img src="../../../img/Header/news.svg" alt="" />
+              <h4>Новости</h4>
+            </a>
+          </div>
+          <div class="nav__item">
+            <a href="../../../pages/personal.html">
+              <img src="../../../img/Header/personal.svg" alt="" />
+              <h4>Личный кабинет</h4>
+            </a>
+          </div>
+          <div class="nav__item">
+            <a href="../../../pages/work.html">
+              <img src="../../../img/Header/works.svg" alt="" />
+              <h4>Мои работы</h4>
+            </a>
+          </div>
+          <div class="nav__item">
+            <a href="../../../pages/login.html">
+              <img src="../../../img/Header/login.svg" alt="" />
+              <h4>Войти</h4>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <img class="pr4_img" src="RedMapa.png" alt="" usemap="#mymapp" />
-      <map name="mymapp">
-        <area shape="rect" coords="322,104 ,364,132" href="map/1.html" />
-      </map>
+      <div class="page__name"><h1>Практическая работа №4</h1></div>
+      <section class="page__section">
+        <div class="section__block">
+          <img class="pr4_img" src="RedMapa.png" alt="" usemap="#mymapp" />
+          <map name="mymapp">
+            <area shape="rect" coords="680,400 ,364,132" href="map/1.html" />
+          </map>
+        </div>
+      </section>
+      <footer>
+        <div class="footer__links">
+          <a href="https://github.com/Danilnaisov" target="_blank">
+            <img src="../../../img/Git.svg" alt="" />
+          </a>
+          <a
+            href="https://www.figma.com/file/5viNWBjOQY8Kkx23qnVJZ5/Untitled"
+            target="_blank"
+          >
+            <img src="../../../img/Figma.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__text">
+          <p>Сайт разработан Четиным Данилом © 2024</p>
+          <p>Все права защищены</p>
+        </div>
+      </footer>
     </main>
-    <footer>
-      <p>Сайт разработан Четиным Данилом © Все права защищены</p>
-    </footer>
   </body>
 </html>
