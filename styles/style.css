@@ -56,14 +56,14 @@ header {
   align-content: center;
 }
 
-.img1 {
+.header_img1 {
   display: block;
   margin: auto;
   width: 18px;
   transition: all 0.2s ease-in-out;
 }
 
-.img2 {
+.header_img2 {
   display: block;
   margin: auto;
   width: 0px;
@@ -86,11 +86,11 @@ header {
   width: 178px;
 }
 
-.header:hover .img1 {
+.header:hover .header_img1 {
   width: 0px;
 }
 
-.header:hover .img2 {
+.header:hover .header_img2 {
   width: 80%;
 }
 
@@ -410,6 +410,10 @@ footer {
 }
 
 @media (width <=1000px) {
+  header {
+    display: none;
+  }
+
   main {
     width: 80%;
     margin-left: auto;
