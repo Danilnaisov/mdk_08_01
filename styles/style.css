@@ -18,6 +18,20 @@ body {
   display: flex;
 }
 
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #b8b8dc;
+  width: 100%;
+  border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #7e7e99;
+}
+
 header {
   width: 20%;
   margin-left: 16px;
@@ -175,6 +189,12 @@ main {
   text-align: center;
 }
 
+.page__name h2 {
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
 .page__section {
   max-width: 844px;
   width: 100%;
@@ -210,6 +230,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: auto;
 }
 
 .section__block img {
@@ -262,16 +283,42 @@ footer {
   padding-right: 5px;
 }
 
+a h2:hover {
+  color: goldenrod;
+}
+
 .new__date {
   font-weight: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.new__block img {
-  transition: all 0.1s linear;
+.new__date p {
+  padding-right: 15px;
 }
 
-.new__block:hover img {
-  transform: scale(1.025);
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+
+th {
+  background-color: #ddd;
+  border-left: none;
+  color: #333;
+  font-weight: bold;
 }
 
 .me__image img {
