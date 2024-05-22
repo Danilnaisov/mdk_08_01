@@ -5,45 +5,37 @@
 }
 
 /* Собаки */
-
 .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 3%;
 }
-
 .dog1 {
   grid-column: 1;
   grid-row: span 3;
 }
-
 .dog2 {
   grid-column: 2;
   grid-row: 1;
 }
-
 .dog3 {
   grid-column: 3;
   grid-row: 1;
 }
-
 .dog4 {
   grid-column: 2;
   grid-row: 3;
 }
-
 .dog5 {
   grid-column: 3;
   grid-row: 3;
 }
-
 .text {
   grid-column: 2 / -1;
   grid-row: 2;
   width: 100%;
 }
-
 /* Кошки */
 
 .wrapper2 {
@@ -52,32 +44,26 @@
   grid-template-rows: repeat(3, 1fr);
   gap: 3%;
 }
-
 .cat1 {
   grid-column: 1;
   grid-row: span 2;
 }
-
 .cat2 {
   grid-column: 2;
   grid-row: 1;
 }
-
 .cat3 {
   grid-column: 3;
   grid-row: 1;
 }
-
 .cat4 {
   grid-column: 2;
   grid-row: 2;
 }
-
 .cat5 {
   grid-column: 3;
   grid-row: 2;
 }
-
 .text2 {
   grid-column: 1 / -1;
   grid-row: 3;

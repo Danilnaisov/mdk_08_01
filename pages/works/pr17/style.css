@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../../fonts/Montserrat-VariableFont.ttf);
+  font-style: normal;
+  display: swap;
+}
+body {
+  font-family: Montserrat, sans-serif;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background: url("img/106.png") center/cover;
+  width: 100%;
+  height: 250px;
+  padding: 25px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  width: 45px;
+  height: 30px;
+  cursor: pointer;
+}
+.user {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+.search {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.userimg {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.username {
+  margin-top: auto;
+}
+.username h1 {
+  color: #fff;
+  font-weight: 300;
+}
+.edit {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+}
+.edit img {
+  transform: translate(400px, -30px);
+}
+.user__statistics {
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.statistics {
+  margin: auto;
+}
+.statistics h4 {
+  font-size: 12px;
+  font-weight: 500;
+  color: gray;
+}
+.statistics h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.user__info {
+  background: rgb(245, 245, 245);
+}
+.info {
+  width: 100%;
+  height: 70px;
+  border-bottom: rgba(206, 206, 206, 0.5) 1px solid;
+  padding-left: 30px;
+  align-content: center;
+}
+.info h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(33, 169, 173);
+}
+.info h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.info__last {
+  border: none;
+}
