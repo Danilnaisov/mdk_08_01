@@ -9,6 +9,9 @@
   font-style: normal;
   display: swap;
 }
+ul {
+  list-style: none;
+}
 body {
   font-family: Montserrat, sans-serif;
 }
@@ -39,7 +42,7 @@ header {
   width: 90%;
   justify-content: center;
 }
-.nav__items h4 {
+.nav__items p {
   font-size: 22px;
   font-weight: 700;
   font-variant: small-caps;
@@ -48,7 +51,7 @@ header {
   cursor: pointer;
   transition: all 0.2s;
 }
-.nav__items h4:hover {
+.nav__items p:hover {
   transform: scale(1.1);
 }
 .selected {
@@ -222,7 +225,7 @@ footer {
   font-size: 16px;
   padding-bottom: 20px;
 }
-.footer__nav h3 {
+.footer__nav p {
   font-weight: 500;
   font-size: 14px;
   color: #d4d4d4;
