@@ -2,12 +2,10 @@
   padding: 0;
   margin: 0;
 }
-
 h1,
 p {
   margin-bottom: 20px;
 }
-
 main {
   max-width: 960px;
   margin: 0 auto;
@@ -16,23 +14,19 @@ main {
   flex-wrap: wrap;
   gap: 3%;
 }
-
 .content {
   width: 60%;
   background: #f0f0f0;
   padding: 2%;
 }
-
 aside {
   width: 30%;
 }
-
 .aside-block {
   padding: 5%;
   margin-bottom: 20px;
   background: #f0f0f0;
 }
-
 @media (width<=800px) {
   .content {
     width: 100%;
@@ -49,7 +43,6 @@ aside {
     padding: 2%;
   }
 }
-
 @media (width<=480px) {
   .aside-block {
     width: 96%;

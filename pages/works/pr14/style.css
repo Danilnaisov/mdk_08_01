@@ -14,7 +14,6 @@ body{
     text-align: center;
     transition: background 0.2s linear;
 }
-
 .box:hover{
 background: #ff7b29;
 }
@@ -29,7 +28,6 @@ background: #ff7b29;
     text-align: center;
     transition: all 0.5s linear;
 }
-
 .boxx:hover{
     background: #ff7b29;
     border-radius: 95px;
@@ -41,22 +39,18 @@ background: #ff7b29;
     display: flex;
     flex-direction: row;
 }
-
 figure{
     margin: 0;
 }
-
 .original, .box{
     border-radius: 6px;
 }
-
 .original{
     background: #eaeaed;
     border: 1px #cecfd5 dashed;
     float: left;
     margin: 12px 15px;
 }
-
 .box1{
     background: #2db34a;
     height: 95px;
@@ -64,16 +58,13 @@ figure{
     width: 95px;
     text-align: center;
 }
-
 .spin{
     cursor: pointer;
     transform-style: preserve-3d;
 }
-
 .spin:hover{
     animation: spin 1s linear infinite;
 }
-
 @keyframes spin {
     0%{
         transform: rotateY(0deg);
@@ -82,15 +73,12 @@ figure{
         transform: rotateY(360deg);
     }
 }
-
 .box-21{
     transform: translateX(-10px);
 }
-
 .box-22{
     transform: translateY(25%);
 }
-
 .box-23{
     transform: translate(-10px, 25%);
 }
@@ -105,7 +93,6 @@ figure{
     position: relative;
     margin: 20px;
 }
-
 .card{
     height: 100%;
     width: 100%;
@@ -113,11 +100,9 @@ figure{
     transform-style: preserve-3d;
     transition: all 0.7s ease-in-out;
 }
-
 .card:hover{
     transform: rotateY(180deg);
 }
-
 .card .side{
     backface-visibility: hidden;
     border-radius: 6px;
@@ -126,11 +111,9 @@ figure{
     overflow: hidden;
     width: 100%;
 }
-
 .card .back{
     transform: rotateY(180deg);
 }
-
 img{
     width: 100%;
 }
@@ -155,7 +138,6 @@ img{
         top: 0;
     }
 }
-
 .stage{
     background: #eaeaed;
     border-radius: 6px;
@@ -163,7 +145,6 @@ img{
     position: relative;
     min-width: 538px;
 }
-
 .stage:hover .ball{
     animation: slide;
     animation-duration: 1s;
@@ -171,7 +152,6 @@ img{
     animation-iteration-count: infinite;
     animation-delay: .5s;
 }
-
 .ball{
     background: #2db34a;
     margin: 10px;
@@ -191,7 +171,6 @@ img{
     position: relative;
     margin: 20px;
 }
-
 .card25{
     height: 100%;
     width: 100%;
@@ -199,11 +178,9 @@ img{
     transform-style: preserve-3d;
     transition: all 2.5s ease-in-out;
 }
-
 .card25:hover{
     transform: rotateY(180deg);
 }
-
 .card25 .image{
     border-radius: 6px;
     height: 100%;

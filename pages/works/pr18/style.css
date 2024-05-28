@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../../fonts/Montserrat-VariableFont.ttf);
+  font-style: normal;
+  display: swap;
+}
+body {
+  margin: 50px;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.block {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  text-align: start;
+  align-items: center;
+}
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50px;
+  background: orangered;
+  text-align: center;
+  align-content: center;
+  color: white;
+  text-wrap: wrap;
+}
+.month {
+  font-size: 16px;
+}
+.text {
+  width: 400px;
+}
+span {
+  color: orangered;
+  cursor: pointer;
+}
+.more {
+  border: 1px black solid;
+  width: 150px;
+  height: 40px;
+  align-content: center;
+  cursor: pointer;
+}
+.more h3 {
+  font-weight: 600;
+}
