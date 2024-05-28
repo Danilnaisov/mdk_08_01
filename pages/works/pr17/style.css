@@ -70,7 +70,7 @@ header {
   display: flex;
 }
 .edit img {
-  transform: translate(400px, -30px);
+  transform: translate(385px, -30px);
 }
 .user__statistics {
   width: 100%;

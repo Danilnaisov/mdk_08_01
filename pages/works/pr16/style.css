@@ -9,11 +9,9 @@
   font-style: normal;
   display: swap;
 }
-ul {
-  list-style: none;
-}
 body {
   font-family: Montserrat, sans-serif;
+  font-style: italic;
 }
 header,
 .find_us,
@@ -42,16 +40,16 @@ header {
   width: 90%;
   justify-content: center;
 }
-.nav__items p {
+.nav__items h4 {
   font-size: 22px;
   font-weight: 700;
   font-variant: small-caps;
-  font-style: italic;
+
   padding: 5px;
   cursor: pointer;
   transition: all 0.2s;
 }
-.nav__items p:hover {
+.nav__items h4:hover {
   transform: scale(1.1);
 }
 .selected {
@@ -77,12 +75,13 @@ header {
 .online__content button {
   background: #f1ac11;
   border: none;
-  height: 30px;
-  font-size: 12px;
+  height: 33px;
+  font-size: 13px;
   font-weight: 600;
   font-style: italic;
   cursor: pointer;
   transition: all 0.2s;
+  padding: 5px;
 }
 .message__hiden,
 .message {
@@ -120,7 +119,6 @@ main {
   color: #f1ac11;
   font-size: 42px;
   font-weight: 500;
-  font-style: italic;
 }
 .wrapper {
   display: grid;
@@ -128,9 +126,46 @@ main {
   grid-template-rows: repeat(3, 1fr);
   gap: 30px;
 }
-.wrapper img {
-  cursor: pointer;
+.wrapper__item{
+  display: flex;
+  gap: 20px;
 }
+.wrapper__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0;
+  width: 350px;
+}
+.text__up{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3px;
+}
+.text__up h4{
+  font-weight: 500;
+}
+.price{
+  background: url("img/mini.png") center;
+  width: 44px;
+  height: 27px;
+  text-align: center;
+  font-size: 13px;
+}
+.price h3{
+  padding: 3px;
+}
+.text__down{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.text__down p{
+  font-size: 13px;
+  color: #d4d4d4;
+}
+
 .online {
   display: flex;
 }
@@ -146,7 +181,7 @@ main {
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  font-style: italic;
+
 }
 .online__content h4 {
   color: #f1ac11;
@@ -195,7 +230,6 @@ main {
   gap: 50px;
   align-items: center;
   margin: 0 auto;
-  font-style: italic;
 }
 .wrapper__block1 {
   text-align: center;
@@ -215,7 +249,6 @@ footer {
   justify-content: center;
   gap: 60px;
   align-items: center;
-  font-style: italic;
 }
 .footer__nav {
   color: white;
